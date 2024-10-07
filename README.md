@@ -1,18 +1,15 @@
-# SEC 10-Q Data Transformer
+# sec_10q_etl
 
-This package transforms 10-Q data obtained from the SEC EDGAR database into pandas DataFrames suitable for machine learning applications.
-
-## Features
-
-- Fetches 10-Q data using a company's stock ticker.
-- Transforms the data into a structured pandas DataFrame.
-- Indexes the DataFrame by timestamps (filing end dates).
-- Columns represent parameters from the 10-Q forms.
-- Values correspond to 'USD' fields from the data.
+A Python package to transform SEC 10-Q data into pandas DataFrames.
 
 ## Installation
 
-1. **Clone the Repository**
+### Prerequisites
 
-   ```bash
-   git clone https://github.com/GabrielCoutinhoEng/sec_10q_transformer.git
+- Python 3.6 or higher
+- `sec_10q_data` package (make sure it's installed)
+
+### Install via pip
+
+```bash
+pip install sec_10q_etl
