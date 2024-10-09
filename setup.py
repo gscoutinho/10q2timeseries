@@ -12,6 +12,7 @@ setup(
     install_requires=[
         'pandas',
         'sec_10q_data',
+        'sklearn'
     ],
     classifiers=[
         'Programming Language :: Python :: 3',
