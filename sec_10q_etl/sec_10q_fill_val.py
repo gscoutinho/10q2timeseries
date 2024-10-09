@@ -1,4 +1,3 @@
-
 from sklearn.linear_model import LinearRegression
 
 def corr_df(df, threshold=0.8):
@@ -30,7 +29,6 @@ def fill_lr(df):
 
         for idx in missing_idx:
             df_correlated = df_raw.dropna(axis=0, subset=[col]+correlated_cols)
-            print(df_correlated.head())
             
             if df_correlated.empty:
                 continue
@@ -64,4 +62,3 @@ def fill_lr(df):
             # Debug: Check the type and shape of df_raw after assignment
     df = df_raw.copy()
     return df
-
